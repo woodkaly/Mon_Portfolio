@@ -24,6 +24,33 @@ header {
     background-color: rgba(0, 31, 63, 0.8);
 }
 
+
+
+
+@media (max-width: 768px) {
+    .profil {
+        font-size: 6vw; /* Plus grand sur mobile */
+        left: 5vw; /* Ajuste la position */
+        top: -3vh;
+    }
+}
+
+@media (max-width: 480px) {
+    .profil {
+        font-size: 8vw; /* Encore plus grand sur petits écrans */
+        left: 2vw;
+        top: 0;
+    }
+}
+
+
+
+
+
+
+
+
+
 h1 {
     color: #0074d9;
 }
@@ -110,6 +137,27 @@ h1 {
 }
 
 
+
+.profil {
+    font-size: 10px;
+    font-weight: bold;
+    color: yellow;
+    text-shadow: 0 0 10px yellow;
+    display: inline-block;
+    animation: clignote 0.8s infinite alternate;
+    position: relative;
+    left: 430px;
+    top: -370px;
+}
+
+@keyframes clignote {
+    from {
+        opacity: 2;
+    }
+    to {
+        opacity: 0;
+    }
+}
 
 
 
