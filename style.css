@@ -1,4 +1,21 @@
 
+
+/* Pour les écrans de moins de 768px (tablettes et téléphones) */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 14px;
+        margin: 10px;
+    }
+}
+
+/* Pour les écrans de moins de 480px (petits téléphones) */
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 12px;
+        margin: 5px;
+    }
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -23,31 +40,6 @@ header {
     text-align: center;
     background-color: rgba(0, 31, 63, 0.8);
 }
-
-
-
-
-@media (max-width: 768px) {
-    .profil {
-        font-size: 6vw; /* Plus grand sur mobile */
-        left: 5vw; /* Ajuste la position */
-        top: -3vh;
-    }
-}
-
-@media (max-width: 480px) {
-    .profil {
-        font-size: 8vw; /* Encore plus grand sur petits écrans */
-        left: 2vw;
-        top: 0;
-    }
-}
-
-
-
-
-
-
 
 
 
