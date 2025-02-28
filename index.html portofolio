@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<nav>
+    <div class="profile">
+        <img src="./images/profile.jpg.jpeg" alt="" height="1784" width="2048"/>
+
+        <h1>GERMAIN Wood Kaly Saintor</h1>
+    </div>
+    <ul>
+        <li><a href="#home">Acceuil</a></li>
+          <li>Facebook</li>
+          <li>Mes Projets</li>
+          <li>Curriculum</li>
+          <li>Mon Blog</li>
+
+    </ul>
+</nav>
+
+</body>
+</html>

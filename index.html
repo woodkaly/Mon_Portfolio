@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio de GERMAIN Wood </title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+        emailjs.init("ton_user_id");
+    </script>
+</head>
+<body>
+<header>
+     <button class="reset-button" onclick="location.reload()">PORTFOLIO</button>
+    <div class="nav-buttons">
+
+
+        <div class="menu-container">
+            <button class="menu-button">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <div class="dropdown-content">
+                <a href="#">Accueil</a>
+                <a href="#">Services</a>
+                <nav>
+                    <ul>
+                        <li><a href="#mes-projets">Mes Projets</a></li>
+                    </ul>
+                </nav>
+                <a href="#">Contact</a>
+            </div>
+        </div>
+
+        <button class="nav-button" onclick="showAbout()">A PROPOS</button>
+
+        <div id="about-content" style="display: none; padding: 20px; font-family: Arial, sans-serif;">
+            <h1>À PROPOS</h1>
+            <p>Je suis <strong>Wood Kaly</strong>, passionné par le BTS Informatique.</p>
+            <p>Mon parcours m'a permis d'acquérir une solide expertise technique, notamment à travers des expériences en développement et des projets de gestion informatique.</p>
+            <p>En parallèle, je partage mes connaissances pour promouvoir une utilisation sécurisée et optimisée des technologies.</p>
+            <p>À travers ce portfolio, je vous invite à découvrir mes réalisations et projets.</p>
+            <button onclick="hideAbout()" style="margin-top: 20px; padding: 10px 20px;">Retour</button>
+        </div>
+
+        <button class="nav-button">VEILLE TECHNO</button>
+
+        <button id="contact-btn" class="nav-button">CONTACT</button>
+        <div id="contact-modal" class="contact-modal" style="display: none;">
+            <div class="contact-modal-content">
+                <span id="close-modal" class="close-modal">&times;</span>
+                <h2>Envoyer un message</h2>
+                <form id="contact-form">
+                    <label for="recipient-email">Email du destinataire :</label>
+                    <input type="email" id="recipient-email" name="recipient_email" required>
+                    <label for="objet">Objet :</label>
+                    <input type="text" id="objet" name="objet" required>
+                    <label for="message">Message :</label>
+                    <textarea id="message" name="message" rows="6" required></textarea>
+                    <input type="submit" value="Envoyer">
+                </form>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+</header>
+<div class="text-box">
+    <h1 class="bienvenue">BIENVENUE</h1>
+    <h2 class="portfolio">SUR MON PORTFOLIO</h2>
+</div>
+<div class="contenu" id="image-bouton">
+        <img src="assets/indetronkad.jpg" alt="Photo de présentation" class="image-droite">
+</div>
+<!-- Fenêtre modale pour afficher les informations -->
+<div id="modal" class="modal">
+    <div class="modal-contenu">
+        <button id="fermer" class="fermer">×</button>
+        <h2>Mes Informations Personnelles</h2>
+        <div class="info">
+            <div class="info-item">
+                <i class="fa fa-user"></i>
+                <p><strong>Nom :</strong> Wood Kaly</p>
+            </div>
+            <div class="info-item">
+                <i class="fa fa-briefcase"></i>
+                <p><strong>Profession :</strong> Développeur d'applications</p>
+            </div>
+            <div class="info-item">
+                <i class="fa fa-envelope"></i>
+                <p><strong>Email :</strong>woodkaly68@gmail.com</p>
+            </div>
+            <div class="info-item">
+                <i class="fa fa-map-marker-alt"></i>
+                <p><strong>Localisation :</strong> METZ, France</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="mes-projets" class="mes-projets">
+    <h2>Mes Projets</h2>
+    <div class="projets-container">
+        <div class="projet">
+            <a href="assets/GLPI%201%20WOOD%20KALY%20SAINTOR.pdf" target="_blank">
+                <img src="assets/GLPI.jpg" alt="Projet 1">
+                <p>GLPI.</p>
+            </a>
+        </div>
+        <div class="projet">
+            <a href="assets/TP4_Git_Mewo.pdf" target="_blank">
+                <img src="assets/GIT-datascientest.jpg" alt="Projet 2">
+                <p>GIT</p>
+            </a>
+        </div>
+        <div class="projet">
+            <a href="assets/TP3_Cookies_Mewo.pdf" target="_blank">
+                <img src="assets/cookie-siteweb.png" alt="Projet 3">
+                <p>COOKIES</p>
+            </a>
+        </div>
+        <div class="projet">
+            <a href="assets/Stéganographie.pdf" target="_blank">
+                <img src="assets/STETANOGRAGHIE.jpg" alt="Projet 4">
+                <p>STEGANOGRAPHIE</p>
+            </a>
+        </div>
+    </div>
+</div>
+
+
+<div class="competences">
+    <h2>MES COMPETENCES </h2>
+    <div class="competences-container">
+        <div class="competence">
+            <p class="description">Création et maintenance de sites web</p>
+            <img src="assets/Dev.webp" alt="Compétence 1">
+            <p>DEVELOPPEURE Web</p>
+        </div>
+        <div class="competence">
+            <p class="description">Protection des systèmes et des réseaux</p>
+            <img src="assets/c1.jpg" alt="Compétence 2">
+            <p>CYBERSECURITE</p>
+        </div>
+        <div class="competence">
+            <p class="description">Analyse et conception d'IA</p>
+            <img src="assets/ia.webp" alt="Compétence 3">
+            <p>Intelligence Artificielle</p>
+        </div>
+    </div>
+</div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
+
+
